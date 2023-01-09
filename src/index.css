@@ -1,13 +1,244 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+
+* {
+  
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  gap: 10px;
+  align-items: center;
+  background-color: #242424;
+  padding: 10px 54px 54px 54px;
+  
+  border-radius: 24px;
+  box-shadow: rgb(101, 29, 226) 14px 10px 1px 0;
+  
+}
+h3{
+  color: #8610bd;
+  font-size: x-large;
+  
+}
+input{
+  outline: none;
+  padding: 8px;
+border: 2px solid #8610bd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: all 300ms ease;
+  
+
+ 
+}
+input:focus{
+  border: 2px solid #00ff00;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+}
+.form > button {
+  padding: 10px 30px;
+  background-color: #242424;
+  color: #8610bd;
+  font-weight: bold;
+  cursor: pointer;
+  border: #8610bd 1px solid;
+  font-size: larger;
+  transition: all 300ms ease;
+  
+
+}
+.form > button:active{
+  transform: scale(1.0);
+}
+.form > button:hover{
+  transform: scale(1.09);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.formContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.na{
+  background-color: #242424;
+  border-radius: 24px;
+  padding: 14px;
+  box-shadow: black 0 24px 24px 0;
+  margin-bottom: 44px;
+  margin-right: 24px;
+  color: white;
+  box-shadow: #242424 14px 10px 24px 0;
+
+margin-bottom: 34px;
+width: 400px;
+  
+ 
+  
+  
+  
+  
+  font-size: x-small;
+  
+ 
+  
+}
+@media (max-width:650px) {
+  .na{
+   
+    font-size: xx-small;
+    width: 300px;
+    
+    
+  }
+  .work{
+  
+  }
+  
+}
+
+.button {
+  padding: 5px 30px;
+  background-color: #242424;
+  color: #8610bd;
+  font-weight: bold;
+  cursor: pointer;
+  border: #8610bd 1px solid;
+  font-size: larger;
+  transition: all 300ms ease;
+}
+.work{
+display: flex;
+align-items: center;
+justify-content: center;
+
+flex-wrap: wrap;
+flex-direction: column;
+
+
+}
+.workContain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  
+
+}
+#w{
+  font-size: 34px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  cursor: pointer;
+  align-items: center;
+
+}
+ul{
+  display: flex;
+  align-items: center;
+
+
+}
+li{
+  margin-right: 24px;
+  color: #8610bd;
+  cursor: pointer;
+  list-style-type: none;
+  font-weight: 900;
+  
+}
+.bb{
+  text-decoration: none;
+}
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnContain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn{
+  background-color: #8610bd;
+  border: none;
+  padding: 14px 34px;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 9px;
+}
+.ss{
+  background-color: #8610bd;
+  border: none;
+  padding: 12px 30px;
+  color: white;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 9px;
+}
+.err{
+  background-color: #242424;
+  color: #8610bd;
+  padding: 14px 34px;
+  border-radius: 10px;
+  font-weight: bold;
+ 
+}
+@media (max-width:428px) {
+  .homeimage{
+    margin-top: 24px;
+    margin-bottom: 34px;
+    width: 400px;
+    
+    object-fit: contain;
+
+  }
+  ul{
+    margin: none;
+  }
+  .nav{
+margin-left:5px ;
+  }
+  .ss{
+    padding: 10px;
+    font-size: small;
+  }
+  li{
+    font-size: small;
+  }
+
+.navLogo{
+  font-size:17px;
+}
+  .btnContain{
+    flex-direction: column;
+  }
+  
+}
+.load{
+  color: #8610bd;
+  animation: spin infinite 1000ms linear;
+  font-weight: 900;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
